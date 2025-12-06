@@ -5,7 +5,7 @@ const { neon } = require("@neondatabase/serverless");
 const port = process.env.PORT || 9999;
 
 app.get('/', (req, res) => {
-    res.redirect('https://gist.githubusercontent.com/lmbanegas/2a5c5289bef3cfdbb9179199484981cb/raw/3edfae85124d6af46ce899f8b661983eaeb46bda/gistfile1.raw');
+    res.redirect('https://gist.github.com/lmbanegas/2a5c5289bef3cfdbb9179199484981cb/raw/0621d00bf72301560694a9fef1f145b9a2b6b650/gistfile1.m3u8');
 });
 
 
