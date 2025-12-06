@@ -5,7 +5,6 @@ const { neon } = require("@neondatabase/serverless");
 const port = process.env.PORT || 9999;
 
 app.get("/", (req, res) => {
-  res.setHeader("Content-Type", "audio/x-mpegurl");
 
   res.send(`#EXTM3U
 
