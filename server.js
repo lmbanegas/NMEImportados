@@ -5,6 +5,7 @@ const { neon } = require("@neondatabase/serverless");
 const port = process.env.PORT || 9999;
 
 app.get("/", (req, res) => {
+  res.setHeader("Content-Type", "text/plain; charset=utf-8");
 
   res.send(`#EXTM3U
 
