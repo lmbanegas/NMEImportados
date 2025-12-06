@@ -4,41 +4,10 @@ const http = require("http");
 const { neon } = require("@neondatabase/serverless");
 const port = process.env.PORT || 9999;
 
-app.get("/", (req, res) => {
-  res.setHeader("Content-Type", "text/plain; charset=utf-8");
-  res.setHeader("Content-Disposition", "inline");
-
-  res.send(`#EXTM3U
-
-#EXTINF:0,ESPN Premium HD AR
-http://190.95.60.228:8500/play/a09v
-
-#EXTINF:0,ESPN Premium HD (Alt)
-http://138.59.227.28:8000/play/a078/index.m3u8
-
-#EXTINF:0,ESPN Premium (DirecTV)
-http://217.26.190.76:8888/play/a0es/index.m3u8
-
-#EXTINF:-1,ESPN PREMIUM
-http://45.5.151.251:8000/play/a00k/index.m3u8
-
-#EXTINF:0,TNT Sports HD AR
-#EXTVLCOPT:network-caching=50
-http://190.95.60.228:8500/play/a08j
-
-#EXTINF:0,TNT SPORTS
-http://45.5.151.251:8000/play/a00p/index.m3u8
-
-#EXTINF:0,TNT Sports HD (Alt)
-http://138.59.227.28:8000/play/a0bk/index.m3u8
-
-#EXTINF:0,TNT SPORTS
-http://45.5.151.251:8000/play/a00p/index.m3u8
-
-#EXTINF:0,TyC Sports HD (81w) AR
-http://190.95.60.228:8500/play/a02m
-`);
+app.get('/', (req, res) => {
+    res.redirect('https://gist.githubusercontent.com/lmbanegas/2a5c5289bef3cfdbb9179199484981cb/raw/3edfae85124d6af46ce899f8b661983eaeb46bda/gistfile1.raw');
 });
+
 
 app.listen(port, () => {
   `Server started on port ${port}`;
