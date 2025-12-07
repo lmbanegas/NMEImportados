@@ -1,17 +1,16 @@
 {
-  "name": "express-vercel-deployment",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server"
-  },
-  "author": "Arpan Neupane",
-  "license": "ISC",
-  "dependencies": {
-    "@neondatabase/serverless": "^1.0.1",
-    "dotenv": "^17.2.3",
-    "express": "^4.21.2"
-  }
+"name": "mostrar-hls",
+"version": "1.0.0",
+"private": true,
+"scripts": {
+"dev": "next dev",
+"build": "next build",
+"start": "next start"
+},
+"dependencies": {
+"next": "14.0.0",
+"react": "18.2.0",
+"react-dom": "18.2.0",
+"hls.js": "1.4.0"
+}
 }
